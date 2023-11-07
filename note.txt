@@ -1,0 +1,8 @@
+#Run 127.0.0.1:8000
+php artisan serve
+
+#Run host:port:8000
+php artisan serve --host 192.168.9.182
+
+#List Routes in Project
+php artisan route:list
