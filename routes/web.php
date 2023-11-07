@@ -54,5 +54,5 @@ Route::get('/member', function () {
 });
 
 Route::get('/admin', function (){
-    return view('admin/admin');
+    return view('admin/index');
 });
