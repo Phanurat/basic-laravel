@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+#create Route
+Route::get('/about', function () {
+    echo "`<h1>Hi Sawadee Kub</h1>";
+});
+
+Route::get('/users', function (){
+    echo "Hello Phanurat";
+    echo "Hello Phanurat";
+    echo "Hello Phanurat";
+});
