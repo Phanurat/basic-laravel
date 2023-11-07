@@ -18,9 +18,9 @@ Route::get('/', function () {
 });
 
 #create Route
-Route::get('/about', function () {
+/*Route::get('/about', function () {
     echo "`<h1>Hi Sawadee Kub</h1>";
-});
+});*/
 
 /*Route::get('/users', function () {
     echo "Hello Phanurat";
@@ -43,3 +43,9 @@ Route::get('products/{name}/{price}', function($name, $price){
     echo "<h1>Name product : $name </h1>";
     echo "<h1>Price : $price</h1>";
 });
+
+#View Files Balde
+Route::get('/about', function () {
+    return view('about');
+});
+
