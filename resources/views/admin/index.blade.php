@@ -9,6 +9,8 @@
 <body>
     <?php 
         $user = "Phanurat";
+
+        $arr = array("Home", "Member", "About", "Contact");
     ?>
     
 
@@ -20,6 +22,17 @@
     @else 
         <h1>User isn't admin</h1>
     @endif
+
+    @foreach($arr as $menu)
+        <a href="">{{$menu}}</a>
+    @endforeach
+
+    <ul>
+        @for($i=1;$i<5;$i++)
+        <p>{{$i}}</p>
+
+        @endfor
+    </ul>
 
 </body>
 </html>
