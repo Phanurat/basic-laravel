@@ -22,8 +22,24 @@ Route::get('/about', function () {
     echo "`<h1>Hi Sawadee Kub</h1>";
 });
 
-Route::get('/users', function (){
+/*Route::get('/users', function () {
     echo "Hello Phanurat";
     echo "Hello Phanurat";
     echo "Hello Phanurat";
+});*/
+
+#Get Parametor
+
+/*Route::get('/users/{name}', function ($name){
+    echo "<h1>Hello $name </h1>";
+}):*/
+
+Route::get('/users/{fname}/{lname}', function ($fname, $lname){
+    echo "<h1>fisrtname $fname</h1>";
+    echo "<h1>lastname $lname</h1>";
+});
+
+Route::get('products/{name}/{price}', function($name, $price){
+    echo "<h1>Name product : $name </h1>";
+    echo "<h1>Price : $price</h1>";
 });
