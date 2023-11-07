@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+#PATH import Controllers
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\MemberController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,14 +49,22 @@ Route::get('products/{name}/{price}', function($name, $price){
 });
 
 #View Files Balde
-Route::get('/about', function () {
+/*Route::get('/about', function () {
     return view('about');
-});
+});*/
 
-Route::get('/member', function () {
+//Call Function controller
+Route::get('/about',[AboutController::class, 'index']);
+//Route::get('/about',[AboutController::class, 'showData']);
+
+/*Route::get('/member', function () {
     return view('member/index');
-});
+});*/
+Route::get('/member', [MemberController::class, 'index']);
 
-Route::get('/admin', function (){
+
+/*Route::get('/admin', function (){
     return view('admin/index');
-});
+});*/
+
+Route::get('/admin', [AdminController::class, 'index']);

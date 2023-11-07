@@ -11,4 +11,4 @@ php artisan route:list
 php artisan migrate
 
 #Create Controller
-php artisan make:controller AboutController
+php artisan make:controller #nameController
