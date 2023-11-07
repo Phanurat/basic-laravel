@@ -6,3 +6,6 @@ php artisan serve --host 192.168.9.182
 
 #List Routes in Project
 php artisan route:list
+
+#Create Database MySQL
+php artisan migrate
