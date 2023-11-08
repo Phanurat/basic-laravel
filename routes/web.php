@@ -53,8 +53,8 @@ Route::get('products/{name}/{price}', function($name, $price){
     return view('about');
 });*/
 
-//Call Function controller
-Route::get('/about',[AboutController::class, 'index']);
+//Call Function controller                              #Type name = path to long
+Route::get('/about',[AboutController::class, 'index'])->name('about');
 //Route::get('/about',[AboutController::class, 'showData']);
 
 /*Route::get('/member', function () {
