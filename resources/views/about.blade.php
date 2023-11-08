@@ -10,10 +10,16 @@
     <h1>Welcome to My Website</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, molestias ea. Deleniti iste at est nihil dignissimos omnis natus voluptatibus assumenda molestiae repellendus vero maxime, unde ex, eius suscipit eligendi?</p>
     
+    <!--Get Value-->
+    <p>Address : {{$address}}</p>
+    <p>Phone :  {{$tel}}</p>
+    <p>Email : {{$email}}</p>
+
     <!--LINK-->
     <a href="{{url('/')}}">Home</a>
     <a href="{{url('/admin')}}">Admin</a>
     <a href="{{url('/member')}}">Member</a>
     <a href="{{route('about')}}">About</a>
+    
 </body>
 </html>
