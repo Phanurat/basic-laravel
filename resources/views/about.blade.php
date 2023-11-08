@@ -15,6 +15,12 @@
     <p>Phone :  {{$tel}}</p>
     <p>Email : {{$email}}</p>
 
+    <!--Show error with-->
+    <p>Error : {{$error}}</p>
+
+    <!--Status-->
+    <p>Status : {{$status}}</p>
+
     <!--LINK-->
     <a href="{{url('/')}}">Home</a>
     <a href="{{url('/admin')}}">Admin</a>
