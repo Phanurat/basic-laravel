@@ -11,7 +11,10 @@ class AboutController extends Controller
         $address = "123 Bangkok, thailand";
         $tel = "0956595973";
         $email = "paunavt5@gmail.com";
-        return view('about', ['address'=>$address, 'tel'=>$tel, 'email'=>$email]);
+        /*return view('about', ['address'=>$address, 'tel'=>$tel, 'email'=>$email]);*/
+
+        #Send value is functions by Compact
+        return view('about', compact('address', 'tel', 'email'));
     }
     function showData(){
         echo "Hello Laravel 8";
