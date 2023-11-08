@@ -12,3 +12,6 @@ php artisan migrate
 
 #Create Controller
 php artisan make:controller #nameController
+
+#Create Middleware 
+php artisan make:middleware CheckAdmin

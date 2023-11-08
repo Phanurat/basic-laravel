@@ -19,7 +19,7 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 #create Route
 /*Route::get('/about', function () {
@@ -53,7 +53,7 @@ Route::get('products/{name}/{price}', function($name, $price){
     return view('about');
 });*/
 
-//Call Function controller                              #Type name = path to long
+//Call Function controller                              #Type name = path to long #add Middleware
 Route::get('/about',[AboutController::class, 'index'])->name('about');
 //Route::get('/about',[AboutController::class, 'showData']);
 
@@ -67,4 +67,4 @@ Route::get('/member', [MemberController::class, 'index']);
     return view('admin/index');
 });*/
 
-Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin', [AdminController::class, 'index'])->middleware('check')->name('admin');
