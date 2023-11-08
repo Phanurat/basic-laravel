@@ -18,10 +18,7 @@ class CheckAdmin
         #Check Request
         if($request->user == "Phanurat"){
             return redirect(route('admin'));
-        }else{
-            return redirect(route('home'));
         }
-        
         return $next($request);
     }
 }
